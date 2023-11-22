@@ -1,0 +1,729 @@
+/*=======
+common css
+========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+    width: 100%;
+  }
+  section {
+    padding: 64px 0;
+  }
+  .section_title {
+    color: blue;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin: 12px;
+  }
+  .section_desc {
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+  .section_desc::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translatex(-50%);
+  }
+
+
+/*=======
+header css
+========*/
+.header{
+    background-color: #2f3240;
+     padding: 25px 0; 
+     position: sticky;
+    top: 0; 
+    
+}
+
+ .container{
+    max-width: 1170px;
+     width: 100%; 
+    margin: auto; 
+    padding: 0 20px;
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* ( jus-conte:space-betwee )
+    mane lekha dui pase jabe */
+    justify-content: space-between;
+
+/* alig  items:senter
+mane lekha midil e jabe*/
+    align-items: center;
+}
+
+nav ul li:hover{
+    /* background-color: #ef6603;  */
+     /* color: #ef6603;  */
+   transition: .50s;  
+   
+    
+}
+
+/* Header */
+
+.logo a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    /* border-radius: 50px; */
+}
+ .menu-bar{
+    background-color: transparent;
+    border: none;
+   outline: none;
+   cursor: pointer;
+     display: none;  
+}
+
+ .menu-bar span{
+    color: white;
+    
+     font-size: 35px; 
+    /* margin-left: 600px;   */
+    
+}   
+
+ nav{
+     display: block; 
+} 
+
+nav ul li{
+      display: inline;  
+        border-radius: 10px;   
+}
+
+nav ul li a{
+   color: white;
+   font-size: 16px;
+
+   /* padding: 17px 13px; */
+    border: 3px; 
+    text-decoration: none; 
+   
+     border-radius: 50px;  
+}
+/*========
+ about css
+=========*/
+
+
+/* 
+banner css
+ */
+ #header {
+    background-color: blue;
+    padding: 12px 0px;
+    position: sticky;
+    top: 0;
+}
+.inner_header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: aqua;
+}
+.menu_bar {
+    background-color: transparent;
+    border: none;
+    display: none;
+    /*cursor: pointer;
+    display: none;
+    */
+}
+.menu_bar span {
+    color: white;
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    padding: 10px 0px 10px 30px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    width: 0%;
+    left: 0px;
+    bottom: -7px;
+    display: inline-block;
+    transition: 0.3s;
+    position: absolute;
+}
+ nav ul li a:hover{
+    color: green;
+} 
+nav ul li:hover a::after{
+    width: 100%;
+}
+#banner {
+    min-height: calc(100vh - 62px);
+    background: linear-gradient(rgba(0, 0, 0, 0.354), rgba(0, 0, 0, 0.406)), url("./photo/low-key-close-up-blooming-pik\ 11-flowers-fruit-tree-garden-dark-blurred-bacckground-173978443.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+#banner .title {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#banner .sub_title {
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+}
+
+
+
+
+
+
+
+
+.inner_about {
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.468);
+    padding: 64px;
+    display: flex;
+    /*
+    flex-wrap: wrap;
+    */
+    justify-content: space-between;
+    column-gap: 25px;
+}
+.personal_info {
+    flex-basis: 50%;
+}
+.personal_info .profile {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+.personal_info .contact_info{
+    margin-top: 10px;
+}
+.personal_info .profile .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.personal_info .profile .avatar img {
+    width: 100%;
+}
+.personal_info .profile .contact_info {
+    list-style: none;
+}
+.personal_info .profile .contact_info li {
+    margin-bottom: 16px;
+    color: #4e4e4e;
+}
+.personal_info .profile .contact_info li:last-child {
+    margin-bottom: 0px;
+}
+.personal_info .profile .contact_info li span {
+    font-weight: bold;
+    color: black;
+}
+.personal_info .skill_container .title {
+    font-weight: 600px;
+    color: blue;
+    font-size: 25px;
+    margin: 16px 0px;
+}
+.personal_info .skill_container .skill {
+    margin: 8px 0px;
+}
+.personal_info .skill_container .skill div {
+    width: 100%;
+    height: 10px;
+    background: #cde1f8;
+    position: relative;
+}
+.personal_info .skill_container .skill div::after {
+    content: "";
+    height: 10px;
+    position: absolute;
+    background-color: #0078ff;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.personal_info .skill_container .skill.html div::after {
+    width: 85%;
+}
+.personal_info .skill_container .skill.css div::after {
+    width: 75%;
+}
+.personal_info .skill_container .skill.php div::after {
+    width: 50%;
+}
+.personal_info .skill_container .skill.js div::after {
+    width: 90%;
+}
+.personal_details {
+    flex-basis: 50%;
+    margin-top: 20px;
+}
+.personal_details .title {
+    font-size: 32px;
+    color: blue;
+    margin-bottom: 15px;
+    margin-left: 40%;
+    position: relative;
+}
+.personal_details .title::after {
+    content: "";
+    width: 93px;
+    height: 2px;
+    background-color: #0078ff;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.personal_details p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+
+/*===========
+service css
+============*/
+
+.inner_service {
+    margin: 64px;
+display: flex;
+flex-wrap: wrap; 
+column-gap: 2%;
+row-gap: 20px;
+}
+.inner_service .service_box {
+    flex-basis: 32%;
+    background-color: #fff;
+    padding: 40px 20px;
+
+
+
+
+
+/*     
+         width: 170px;
+        border-radius: 50%;  */
+
+        animation-name: myAnimation;
+        animation-duration: 10s;
+        animation: myAnimation 1s infinite; 
+    
+        /* animation-iteration-count: infinite; */
+    
+    
+        transform: rotate(360deg);
+    
+    @keyframes myAnimation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    
+        } 
+
+
+}
+.inner_service .service_box .icon {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #0078ff;
+    border-radius: 50%;
+    margin: 0 auto;
+     display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.2s ease-in
+    
+
+        
+    
+    
+
+
+    
+        
+    
+        
+
+}
+
+   
+        
+
+.inner_service .service_box:hover .icon {
+     border-color: #7cb8fc; 
+    background-color: #0078ff;
+    color: white;
+
+
+
+   
+        border-radius: 50%;
+
+        /* animation-name: myAnimation; */
+        animation-duration: 2s;
+    
+        animation-iteration-count: infinite;
+    
+        transform: rotate(360deg);
+    
+    @keyframes myAnimation{
+         from{
+            transform: rotate(0deg);
+        } 
+        to{
+            transform: rotate(360deg);
+        }
+    
+        }
+
+
+    
+}
+.inner_service .service_box:hover{
+    background-color: #ed502e;
+    color: white;
+}
+.inner_service .service_box:hover p{
+    color: white;
+}
+.inner_service .service_box .icon i {
+    font-size: 40px;
+}
+.inner_service .service_box h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.inner_service .service_box p {
+    text-align: center;
+    color: #4e4e4e;
+    line-height: 25px;
+}
+
+
+/*===============
+count section css
+================*/
+
+#count {
+    background-image: linear-gradient(
+    hsla(212, 100%, 50%, 0.68),
+    hsla(212, 100%, 50%, 0.68)),
+     url(./../images/counters-bg.jpg);
+    background-attachment: fixed;
+}
+.inner_count {
+    min-height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.count_box {
+    flex-basis: 25%;
+}
+
+.count_box .icon {
+    height: 80px;
+    width: 80px;
+    border: 10px solid #cde1f8;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.count_box .icon i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.count_box h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.count_box p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/*===================
+portfolio section css
+===================*/
+
+.inner_portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 30px;
+    margin-top: 64px;
+
+}
+.inner_portfolio .portfolio_box {
+    flex-basis: 32%;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+.inner_portfolio .portfolio_box .img {
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+.inner_portfolio .portfolio_box .img img {
+    width: 100%;
+    transition: 0.5s;
+}
+.inner_portfolio .portfolio_box:hover .img img {
+    transform: scale(1.2);
+}
+.inner_portfolio .portfolio_box .details {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner_portfolio .portfolio_box .details .contact h6 {
+    font-size: 20px;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+.inner_portfolio .portfolio_box .details .contact p {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+.inner_portfolio .portfolio_box .details .contact p span {
+    color: #0078ff;
+}
+.inner_portfolio .portfolio_box .details button {
+    color: #0078ff;
+    font-size: 30px;
+    background-color: transparent;
+    border: transparent;
+    border: 2px solid #0078ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*===============
+alonso section css
+================*/
+
+#alonso {
+    background-image: linear-gradient(
+    hsla(212, 100%, 50%, 0.68),
+    hsla(212, 100%, 50%, 0.68)),
+    url(./../images/alonso-bg.jpg);
+    background-attachment: fixed;
+}
+    .inner_alonso {
+        min-height: 355px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .alonso_box {
+        margin: 64px;
+        flex-wrap: wrap;
+    }
+    .inner_alonso img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+
+        animation-name: myAnimation;
+        animation-duration: 12s;
+    
+        animation-iteration-count: infinite;
+    
+        transform: rotate(360deg);
+    }
+    @keyframes myAnimation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    
+        }
+
+
+
+    .inner_alonso .alonso_box h3 {
+        color: white;
+        margin: 10px;
+    }
+    .inner_alonso .alonso_box p {
+        color: white
+    } 
+
+    /*==============
+    blog section css
+    ===============*/
+    .inner_blog{
+        background-color: rgba(0, 0, 0, 0.142);
+        padding: 10px;
+        margin: 30px 0px 20px 0px;
+       }
+
+    .inner_blog .blog_box{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .inner_blog .blog_box .img img{
+        height: 350px;
+        width: 250px;
+        transition: 0.5s;
+    }
+    .inner_blog .blog_box .img:hover img{
+        transform: scale(1.1);
+    }
+
+    
+/*================
+footer section css
+=================*/
+.inner_footer_section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.508)),url(../images/content.jpg);
+    margin: 40px 0px 20px 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner_footer_content_parent{
+    padding-top: 50px;
+}
+.inner_footer_content_title{
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.inner_footer_content_pera{
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.inner_footer_section .input_button{
+    color: white;
+    margin: 3px;
+}
+
+
+.inner_footer_section ul{
+    display: flex;
+    margin:30px 0px;
+ 
+}
+.inner_footer_section ul li{
+    list-style: none;
+    padding: 10px 10px;
+    background-color: rgba(34, 218, 14, 0.737);
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.inner_footer_section ul li a i{
+  
+font-size:22px;
+}
+
+/*=================
+footer section end
+==================*/
+
+

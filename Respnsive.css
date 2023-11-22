@@ -1,0 +1,66 @@
+/*=======
+ tablet
+========*/
+@media screen and (max-width: 992px) {
+    nav{
+    display: none;
+}
+.menu-bar {
+    display: inline-block;
+}
+.inner_about .personal_info{
+    flex-basis: 49%;
+}
+.inner_service .service_box {
+    flex-basis: 49%;
+}
+.inner_portfolio .portfolio_box {
+    flex-basis: 49%;
+}
+.inner_count .count_box {
+    flex-basis: 48%;
+}
+
+.inner_blog .blog_box{
+    flex-basis: 49%;
+}
+.inner_flower .flower_box{
+    flex-basis: 40%;
+}
+}
+
+/*=======
+ phone
+========*/
+@media screen and (max-width: 768px) {
+    nav{
+    display: none;
+}
+.menu-bar {
+    display: inline-block;
+}
+.inner_about .personal_info{
+    flex-basis: 100%;
+}
+.inner_service .service_box {
+    flex-basis: 100%;
+}
+.inner_portfolio .portfolio_box {
+    flex-basis: 100%;
+}
+.inner_count .count_box {
+    flex-basis: 100%;
+}
+.inner_blog .blog_box{
+    flex-basis: 100%;
+}
+.profile {
+    flex-direction: column;
+}
+.inner_about{
+    flex-direction: column;
+}
+.inner_flower .flower_box{
+    flex-basis: 100%;
+}
+}
